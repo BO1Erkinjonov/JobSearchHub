@@ -1,0 +1,29 @@
+p, unauthorized, /v1/swagger/*, GET
+p, unauthorized, /v1/swagger/index.html, GET
+p, unauthorized, /v1/swagger/index.html, POST
+p, unauthorized, /v1/login, POST
+p, unauthorized, /v1/register, POST
+p, unauthorized, /v1/Verification, POST
+p, unauthorized, /v1/swagger/swagger-ui.css, GET
+p, unauthorized, /v1/swagger/swagger-ui-bundle.js, GET
+p, unauthorized, /v1/swagger/swagger-ui-standalone-preset.js, GET
+p, unauthorized, /v1/swagger/favicon-32x32.png, GET
+p, unauthorized, /v1/swagger/swagger/doc.json, GET
+
+p, client, /v1/get/client, GET
+p, client, /v1/update/client, PUT
+p, client, /v1/delete/client, DELETE
+p, client, /v1/create/job, POST
+p, client, /v1/get/jobs/ownerId, GET
+p, client, /v1/get/jobs, GET
+p, client, /v1/create/summary, POST
+p, client, /v1/get/all/summary/owner, GET
+p, client, /v1/delete/summary, DELETE
+p, client, /v1/update/job, PUT
+p, client, /v1/delete/job, DELETE
+p, client, /v1/update/summary, PUT
+p, client, /v1/create/request, POST
+p, client, /v1/get/all/request, GET
+p, client, /v1/update/request, PUT
+
+g, client, unauthorized

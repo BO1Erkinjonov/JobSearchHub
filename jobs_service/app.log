@@ -1,0 +1,940 @@
+2024-05-01T10:41:04.620+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:16:00.080+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:16:44.458+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:16:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:42476", "error": "error during sql build, jobs create: ERROR: relation \"jobs\" does not exist (SQLSTATE 42P01)", "grpc.code": "Unknown", "grpc.time_ms": 9.932}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:17:12.988+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:17:15.260+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:17:15+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:49750", "error": "error during sql build, jobs create: ERROR: relation \"jobs\" does not exist (SQLSTATE 42P01)", "grpc.code": "Unknown", "grpc.time_ms": 0.521}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:17:52.026+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:17:53.731+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:17:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:38314", "error": "error during sql build, jobs create: ERROR: relation \"jobs\" does not exist (SQLSTATE 42P01)", "grpc.code": "Unknown", "grpc.time_ms": 0.5}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:18:05.594+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:18:07.093+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:18:07+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:39448", "error": "error during sql build, jobs create: ERROR: relation \"jobs\" does not exist (SQLSTATE 42P01)", "grpc.code": "Unknown", "grpc.time_ms": 0.456}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:21:56.804+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:21:59.993+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:21:59+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:35486", "error": "error during sql build, jobs create: ERROR: column \"deleted_at\" does not exist (SQLSTATE 42703)", "grpc.code": "Unknown", "grpc.time_ms": 0.624}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:22:37.018+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:22:39.069+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:22:39+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:50326", "error": "error during sql build, jobs create: can't scan into dest[7]: cannot assign NULL to *time.Time", "grpc.code": "Unknown", "grpc.time_ms": 3.305}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:580
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:23:45.133+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:23:48.110+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:23:48+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:53754", "grpc.code": "OK", "grpc.time_ms": 4.511}
+2024-05-01T11:24:03.302+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:24:03+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetJobById", "peer.address": "127.0.0.1:54724", "grpc.code": "OK", "grpc.time_ms": 3.773}
+2024-05-01T11:24:11.914+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:24:11+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:54730", "error": "error during sql build, jobs list: ERROR: column \"hello\" does not exist (SQLSTATE 42703)", "grpc.code": "Unknown", "grpc.time_ms": 0.414}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:24:18.964+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:24:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:57828", "grpc.code": "OK", "grpc.time_ms": 0.45}
+2024-05-01T11:24:38.751+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:24:38+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:40782", "error": "error during sql build, jobs update: no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 3.353}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_UpdateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:634
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:25:43.906+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:25:44.948+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:25:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:49768", "error": "error during sql build, jobs update: no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 0.937}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_UpdateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:634
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:25:56.646+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:25:58.365+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:25:58+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:49552", "error": "error during sql build, jobs update: no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 1.222}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_UpdateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:634
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:26:13.865+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:26:49.923+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:26:49+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:53022", "grpc.code": "OK", "grpc.time_ms": 117.285}
+2024-05-01T11:27:01.670+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:27:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:46500", "grpc.code": "OK", "grpc.time_ms": 3.343}
+2024-05-01T11:27:27.595+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:27:27+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:37552", "grpc.code": "OK", "grpc.time_ms": 0.667}
+2024-05-01T11:27:45.935+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:27:45+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:56954", "grpc.code": "OK", "grpc.time_ms": 0.308}
+2024-05-01T11:28:17.121+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:28:18.679+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:28:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:43784", "grpc.code": "OK", "grpc.time_ms": 1.021}
+2024-05-01T11:28:31.359+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:28:32.880+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:28:32+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:46648", "grpc.code": "OK", "grpc.time_ms": 1.105}
+2024-05-01T11:28:46.821+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:28:47.840+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:28:47+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:38784", "grpc.code": "OK", "grpc.time_ms": 1.011}
+2024-05-01T11:29:14.884+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:29:16.557+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:29:16+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:40702", "grpc.code": "OK", "grpc.time_ms": 1.153}
+2024-05-01T11:29:54.513+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:29:55.812+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:29:55+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:50582", "grpc.code": "OK", "grpc.time_ms": 0.949}
+2024-05-01T11:31:17.283+0500	INFO	app/app.go:121	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T11:31:24.920+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:31:24+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:59882", "grpc.code": "OK", "grpc.time_ms": 1.024}
+2024-05-01T11:31:56.338+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:31:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteJob", "peer.address": "127.0.0.1:33066", "grpc.code": "OK", "grpc.time_ms": 4.438}
+2024-05-01T11:32:21.526+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:32:21+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteJob", "peer.address": "127.0.0.1:37866", "grpc.code": "OK", "grpc.time_ms": 4.022}
+2024-05-01T11:32:21.921+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:32:21+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteJob", "peer.address": "127.0.0.1:37876", "grpc.code": "OK", "grpc.time_ms": 4.129}
+2024-05-01T11:32:45.595+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:32:45+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetJobById", "peer.address": "127.0.0.1:44888", "grpc.code": "OK", "grpc.time_ms": 0.574}
+2024-05-01T11:32:53.347+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T11:32:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetJobById", "peer.address": "127.0.0.1:59084", "error": "error during sql build, jobs get: no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 0.474}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetJobById_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:598
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T11:33:05.147+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T11:33:05+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteJob", "peer.address": "127.0.0.1:41794", "grpc.code": "OK", "grpc.time_ms": 3.939}
+2024-05-01T14:28:07.017+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:37:56.804+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:37:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:44928", "error": "error during sql build, Requests create: ERROR: column \"job_id\" of relation \"requests\" does not exist (SQLSTATE 42703)", "grpc.code": "Unknown", "grpc.time_ms": 8.107}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_CreateRequests_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:480
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:39:21.438+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:39:24.092+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:39:24+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:46292", "error": "error during sql build, Requests create: ERROR: null value in column \"description_resp\" of relation \"requests\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 1.161}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_CreateRequests_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:480
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:39:35.858+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:39:35+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:35456", "error": "error during sql build, Requests create: ERROR: null value in column \"description_resp\" of relation \"requests\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 0.482}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_CreateRequests_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:480
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:39:57.683+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:39:59.357+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:39:59+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:38290", "error": "error during sql build, Requests create: can't scan into dest[4]: cannot scan null into *string", "grpc.code": "Unknown", "grpc.time_ms": 29.368}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_CreateRequests_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:480
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:41:25.461+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:41:26.545+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:41:26+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:44188", "grpc.code": "OK", "grpc.time_ms": 4.886}
+2024-05-01T14:41:40.578+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:41:40+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:44926", "error": "error during sql build, Requests get: ERROR: column \"id\" does not exist (SQLSTATE 42703)", "grpc.code": "Unknown", "grpc.time_ms": 0.311}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_GetRequestByJobIdOrClientId_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:498
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:41:52.856+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:41:54.067+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T14:41:54+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:60778", "error": "error during sql build, Requests get: can't scan into dest[4]: cannot scan null into *string", "grpc.code": "Unknown", "grpc.time_ms": 4.509}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/requests._RequestsService_GetRequestByJobIdOrClientId_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/requests/requests.pb.go:498
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T14:43:21.955+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:43:23.361+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:43:23+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:44438", "grpc.code": "OK", "grpc.time_ms": 1.508}
+2024-05-01T14:44:02.165+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:44:02+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:38096", "grpc.code": "OK", "grpc.time_ms": 3.654}
+2024-05-01T14:44:14.104+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:44:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50772", "grpc.code": "OK", "grpc.time_ms": 0.61}
+2024-05-01T14:44:27.100+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:44:27+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:38416", "grpc.code": "OK", "grpc.time_ms": 0.654}
+2024-05-01T14:45:10.553+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:45:10+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:55194", "grpc.code": "OK", "grpc.time_ms": 5.286}
+2024-05-01T14:45:17.724+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:45:17+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:50906", "grpc.code": "OK", "grpc.time_ms": 0.458}
+2024-05-01T14:45:30.532+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:45:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "DeleteRequest", "peer.address": "127.0.0.1:59162", "grpc.code": "OK", "grpc.time_ms": 0.502}
+2024-05-01T14:45:33.495+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:45:33+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:53762", "grpc.code": "OK", "grpc.time_ms": 0.648}
+2024-05-01T14:47:36.377+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:47:39.682+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:47:39+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:56942", "grpc.code": "OK", "grpc.time_ms": 1.005}
+2024-05-01T14:47:57.364+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:47:59.413+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:47:59+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:47552", "grpc.code": "OK", "grpc.time_ms": 1.4}
+2024-05-01T14:48:25.105+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:48:26.454+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:48:26+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "GetRequestByJobIdOrClientId", "peer.address": "127.0.0.1:46110", "grpc.code": "OK", "grpc.time_ms": 1.325}
+2024-05-01T14:48:46.800+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T14:48:53.318+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T14:48:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "requests.RequestsService", "grpc.method": "DeleteRequest", "peer.address": "127.0.0.1:42216", "grpc.code": "OK", "grpc.time_ms": 28.039}
+2024-05-01T19:58:31.766+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T19:58:46.578+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T19:58:46+05:00", "grpc.request.deadline": "2024-05-01T19:58:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:48786", "grpc.code": "OK", "grpc.time_ms": 4.512}
+2024-05-01T20:29:11.214+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:29:11+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:33008", "grpc.code": "OK", "grpc.time_ms": 11.489}
+2024-05-01T20:29:14.894+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:29:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:33016", "grpc.code": "OK", "grpc.time_ms": 2.831}
+2024-05-01T20:29:27.790+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:29:27+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:52414", "grpc.code": "OK", "grpc.time_ms": 0.404}
+2024-05-01T20:29:32.760+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:29:32+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:57744", "grpc.code": "OK", "grpc.time_ms": 0.428}
+2024-05-01T20:40:12.434+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:40:12+05:00", "grpc.request.deadline": "2024-05-01T20:40:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:48644", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 5.711}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:41:11.529+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:41:11+05:00", "grpc.request.deadline": "2024-05-01T20:41:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55884", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 0.307}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:41:52.876+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T20:41:55.450+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:41:55+05:00", "grpc.request.deadline": "2024-05-01T20:42:02+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41516", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 2.907}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:42:27.607+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:42:27+05:00", "grpc.request.deadline": "2024-05-01T20:42:34+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41516", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 0.306}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:42:39.601+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:42:39+05:00", "grpc.request.deadline": "2024-05-01T20:42:46+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41516", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 0.271}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:46:31.385+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T20:46:56.384+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-01T20:46:56+05:00", "grpc.request.deadline": "2024-05-01T20:47:03+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:38756", "error": "error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)", "grpc.code": "Unknown", "grpc.time_ms": 0.579}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:616
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-01T20:47:20.046+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-01T20:47:21.668+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:47:21+05:00", "grpc.request.deadline": "2024-05-01T20:47:28+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.915}
+2024-05-01T20:55:10.993+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:55:10+05:00", "grpc.request.deadline": "2024-05-01T20:55:17+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:54924", "grpc.code": "OK", "grpc.time_ms": 0.531}
+2024-05-01T20:55:16.290+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:55:16+05:00", "grpc.request.deadline": "2024-05-01T20:55:23+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:54924", "grpc.code": "OK", "grpc.time_ms": 5.215}
+2024-05-01T20:55:20.045+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T20:55:20+05:00", "grpc.request.deadline": "2024-05-01T20:55:27+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:54924", "grpc.code": "OK", "grpc.time_ms": 0.431}
+2024-05-01T21:13:04.926+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T21:13:04+05:00", "grpc.request.deadline": "2024-05-01T21:13:11+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:44208", "grpc.code": "OK", "grpc.time_ms": 0.386}
+2024-05-01T21:13:39.196+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T21:13:39+05:00", "grpc.request.deadline": "2024-05-01T21:13:46+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:33158", "grpc.code": "OK", "grpc.time_ms": 0.28}
+2024-05-01T21:45:33.636+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T21:45:33+05:00", "grpc.request.deadline": "2024-05-01T21:45:40+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:58286", "grpc.code": "OK", "grpc.time_ms": 4.204}
+2024-05-01T21:45:39.973+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-01T21:45:39+05:00", "grpc.request.deadline": "2024-05-01T21:45:46+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:58286", "grpc.code": "OK", "grpc.time_ms": 0.587}
+2024-05-02T00:50:25.547+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:50:25+05:00", "grpc.request.deadline": "2024-05-02T00:50:32+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:49434", "grpc.code": "OK", "grpc.time_ms": 12.816}
+2024-05-02T00:51:40.980+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:51:40+05:00", "grpc.request.deadline": "2024-05-02T00:51:47+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45506", "grpc.code": "OK", "grpc.time_ms": 2.288}
+2024-05-02T00:52:01.264+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:52:01+05:00", "grpc.request.deadline": "2024-05-02T00:52:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45506", "grpc.code": "OK", "grpc.time_ms": 0.495}
+2024-05-02T00:53:39.211+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T00:53:42.855+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:53:42+05:00", "grpc.request.deadline": "2024-05-02T00:53:49+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.842}
+2024-05-02T00:55:18.215+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:55:18+05:00", "grpc.request.deadline": "2024-05-02T00:55:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.434}
+2024-05-02T00:55:23.994+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:55:23+05:00", "grpc.request.deadline": "2024-05-02T00:55:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.459}
+2024-05-02T00:55:45.207+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:55:45+05:00", "grpc.request.deadline": "2024-05-02T00:55:52+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 4.421}
+2024-05-02T00:56:29.758+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:56:29+05:00", "grpc.request.deadline": "2024-05-02T00:56:36+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.384}
+2024-05-02T00:56:47.834+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:56:47+05:00", "grpc.request.deadline": "2024-05-02T00:56:54+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.409}
+2024-05-02T00:56:47.838+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:56:47+05:00", "grpc.request.deadline": "2024-05-02T00:56:54+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 4.263}
+2024-05-02T00:57:08.543+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T00:57:08+05:00", "grpc.request.deadline": "2024-05-02T00:57:15+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51942", "grpc.code": "OK", "grpc.time_ms": 0.538}
+2024-05-02T01:03:22.596+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:03:35.437+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:03:35+05:00", "grpc.request.deadline": "2024-05-02T01:03:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:36708", "grpc.code": "OK", "grpc.time_ms": 4.535}
+2024-05-02T01:05:01.213+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:05:01+05:00", "grpc.request.deadline": "2024-05-02T01:05:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:35296", "grpc.code": "OK", "grpc.time_ms": 4.25}
+2024-05-02T01:05:27.235+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:05:29.535+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:05:29+05:00", "grpc.request.deadline": "2024-05-02T01:05:36+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:41268", "grpc.code": "OK", "grpc.time_ms": 1.304}
+2024-05-02T01:07:10.791+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:07:22.744+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:07:22+05:00", "grpc.request.deadline": "2024-05-02T01:07:29+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:54668", "grpc.code": "OK", "grpc.time_ms": 0.843}
+2024-05-02T01:07:22.748+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:07:22+05:00", "grpc.request.deadline": "2024-05-02T01:07:29+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:54668", "grpc.code": "OK", "grpc.time_ms": 4.064}
+2024-05-02T01:08:00.109+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:08:02.571+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:08:02+05:00", "grpc.request.deadline": "2024-05-02T01:08:09+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41054", "grpc.code": "OK", "grpc.time_ms": 0.916}
+2024-05-02T01:08:02.574+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:08:02+05:00", "grpc.request.deadline": "2024-05-02T01:08:09+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:41054", "grpc.code": "OK", "grpc.time_ms": 2.167}
+2024-05-02T01:08:17.205+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:08:17+05:00", "grpc.request.deadline": "2024-05-02T01:08:24+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41054", "grpc.code": "OK", "grpc.time_ms": 0.6}
+2024-05-02T01:08:37.365+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:08:37+05:00", "grpc.request.deadline": "2024-05-02T01:08:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:41054", "grpc.code": "OK", "grpc.time_ms": 3.784}
+2024-05-02T01:10:11.302+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:10:11+05:00", "grpc.request.deadline": "2024-05-02T01:10:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:59738", "grpc.code": "OK", "grpc.time_ms": 0.452}
+2024-05-02T01:10:11.306+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:10:11+05:00", "grpc.request.deadline": "2024-05-02T01:10:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:59738", "grpc.code": "OK", "grpc.time_ms": 3.801}
+2024-05-02T01:11:12.731+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:11:12+05:00", "grpc.request.deadline": "2024-05-02T01:11:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:35136", "grpc.code": "OK", "grpc.time_ms": 0.586}
+2024-05-02T01:11:12.759+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:11:12+05:00", "grpc.request.deadline": "2024-05-02T01:11:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:35136", "grpc.code": "OK", "grpc.time_ms": 26.809}
+2024-05-02T01:12:43.062+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:12:43+05:00", "grpc.request.deadline": "2024-05-02T01:12:50+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.503}
+2024-05-02T01:12:54.585+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:12:54+05:00", "grpc.request.deadline": "2024-05-02T01:13:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.568}
+2024-05-02T01:12:54.589+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:12:54+05:00", "grpc.request.deadline": "2024-05-02T01:13:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 3.728}
+2024-05-02T01:13:01.505+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:13:01+05:00", "grpc.request.deadline": "2024-05-02T01:13:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.35}
+2024-05-02T01:13:17.425+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:13:17+05:00", "grpc.request.deadline": "2024-05-02T01:13:24+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.307}
+2024-05-02T01:13:18.816+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:13:18+05:00", "grpc.request.deadline": "2024-05-02T01:13:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.346}
+2024-05-02T01:13:41.395+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:13:41+05:00", "grpc.request.deadline": "2024-05-02T01:13:48+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55780", "grpc.code": "OK", "grpc.time_ms": 0.243}
+2024-05-02T01:14:23.020+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:23+05:00", "grpc.request.deadline": "2024-05-02T01:14:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.448}
+2024-05-02T01:14:23.022+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:23+05:00", "grpc.request.deadline": "2024-05-02T01:14:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 1.305}
+2024-05-02T01:14:35.451+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:35+05:00", "grpc.request.deadline": "2024-05-02T01:14:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.304}
+2024-05-02T01:14:35.455+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:35+05:00", "grpc.request.deadline": "2024-05-02T01:14:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 3.969}
+2024-05-02T01:14:36.184+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.301}
+2024-05-02T01:14:36.188+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 3.891}
+2024-05-02T01:14:36.382+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.292}
+2024-05-02T01:14:36.386+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 3.722}
+2024-05-02T01:14:36.564+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.248}
+2024-05-02T01:14:36.568+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 3.862}
+2024-05-02T01:14:36.740+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 0.385}
+2024-05-02T01:14:36.744+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:14:36+05:00", "grpc.request.deadline": "2024-05-02T01:14:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:45382", "grpc.code": "OK", "grpc.time_ms": 4.083}
+2024-05-02T01:16:42.511+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:16:42+05:00", "grpc.request.deadline": "2024-05-02T01:16:49+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:42564", "grpc.code": "OK", "grpc.time_ms": 0.253}
+2024-05-02T01:16:42.515+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:16:42+05:00", "grpc.request.deadline": "2024-05-02T01:16:49+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:42564", "grpc.code": "OK", "grpc.time_ms": 3.913}
+2024-05-02T01:16:57.997+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:16:57+05:00", "grpc.request.deadline": "2024-05-02T01:17:04+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:42564", "grpc.code": "OK", "grpc.time_ms": 0.26}
+2024-05-02T01:16:57.999+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:16:57+05:00", "grpc.request.deadline": "2024-05-02T01:17:04+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:42564", "grpc.code": "OK", "grpc.time_ms": 1.716}
+2024-05-02T01:17:53.465+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:17:53+05:00", "grpc.request.deadline": "2024-05-02T01:18:00+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:39446", "grpc.code": "OK", "grpc.time_ms": 0.34}
+2024-05-02T01:17:53.469+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:17:53+05:00", "grpc.request.deadline": "2024-05-02T01:18:00+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:39446", "grpc.code": "OK", "grpc.time_ms": 3.868}
+2024-05-02T01:18:10.245+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:18:10+05:00", "grpc.request.deadline": "2024-05-02T01:18:17+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:60332", "grpc.code": "OK", "grpc.time_ms": 0.324}
+2024-05-02T01:18:29.343+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:18:29+05:00", "grpc.request.deadline": "2024-05-02T01:18:36+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:60332", "grpc.code": "OK", "grpc.time_ms": 0.288}
+2024-05-02T01:18:43.639+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:18:43+05:00", "grpc.request.deadline": "2024-05-02T01:18:50+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:60332", "grpc.code": "OK", "grpc.time_ms": 0.59}
+2024-05-02T01:18:54.033+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:18:54+05:00", "grpc.request.deadline": "2024-05-02T01:19:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:40832", "grpc.code": "OK", "grpc.time_ms": 0.261}
+2024-05-02T01:19:14.269+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:19:14+05:00", "grpc.request.deadline": "2024-05-02T01:19:21+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55680", "grpc.code": "OK", "grpc.time_ms": 0.342}
+2024-05-02T01:21:18.494+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:21:18+05:00", "grpc.request.deadline": "2024-05-02T01:21:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:47050", "grpc.code": "OK", "grpc.time_ms": 0.364}
+2024-05-02T01:21:37.638+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:21:37+05:00", "grpc.request.deadline": "2024-05-02T01:21:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:47050", "grpc.code": "OK", "grpc.time_ms": 0.323}
+2024-05-02T01:21:37.643+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:21:37+05:00", "grpc.request.deadline": "2024-05-02T01:21:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:47050", "grpc.code": "OK", "grpc.time_ms": 3.953}
+2024-05-02T01:23:47.628+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:23:56.301+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:23:56+05:00", "grpc.request.deadline": "2024-05-02T01:24:03+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:44034", "grpc.code": "OK", "grpc.time_ms": 0.906}
+2024-05-02T01:23:56.306+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:23:56+05:00", "grpc.request.deadline": "2024-05-02T01:24:03+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:44034", "grpc.code": "OK", "grpc.time_ms": 3.99}
+2024-05-02T01:25:50.759+0500	INFO	app/app.go:111	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T01:33:45.121+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:33:45+05:00", "grpc.request.deadline": "2024-05-02T01:33:52+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51006", "grpc.code": "OK", "grpc.time_ms": 3.995}
+2024-05-02T01:34:01.295+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:34:01+05:00", "grpc.request.deadline": "2024-05-02T01:34:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51006", "grpc.code": "OK", "grpc.time_ms": 0.613}
+2024-05-02T01:34:01.298+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:34:01+05:00", "grpc.request.deadline": "2024-05-02T01:34:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteJob", "peer.address": "127.0.0.1:51006", "grpc.code": "OK", "grpc.time_ms": 2.263}
+2024-05-02T01:34:46.276+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T01:34:46+05:00", "grpc.request.deadline": "2024-05-02T01:34:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:51006", "grpc.code": "OK", "grpc.time_ms": 0.591}
+2024-05-02T01:56:33.546+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T02:31:11.589+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T02:31:41.471+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T02:31:41+05:00", "grpc.request.deadline": "2024-05-02T02:31:48+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:46732", "grpc.code": "OK", "grpc.time_ms": 0.81}
+2024-05-02T02:32:18.509+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T02:32:18+05:00", "grpc.request.deadline": "2024-05-02T02:32:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:46732", "grpc.code": "OK", "grpc.time_ms": 5.308}
+2024-05-02T02:41:27.355+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T02:41:37.736+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T02:41:37+05:00", "grpc.request.deadline": "2024-05-02T02:41:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:51688", "grpc.code": "OK", "grpc.time_ms": 4.548}
+2024-05-02T02:51:41.963+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:00:06.787+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:00:06+05:00", "grpc.request.deadline": "2024-05-02T03:00:13+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:41350", "grpc.code": "OK", "grpc.time_ms": 0.765}
+2024-05-02T03:22:36.426+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:31:49.025+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:31:49+05:00", "grpc.request.deadline": "2024-05-02T03:31:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:57502", "error": "error during sql build, jobs create: ERROR: null value in column \"responses\" of relation \"jobs\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 4.87}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:33:10.331+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:33:18.015+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:33:18+05:00", "grpc.request.deadline": "2024-05-02T03:33:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:60498", "error": "error during sql build, jobs create: ERROR: null value in column \"responses\" of relation \"jobs\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 0.689}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:33:58.924+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:33:58+05:00", "grpc.request.deadline": "2024-05-02T03:34:05+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:37896", "error": "error during sql build, jobs create: ERROR: null value in column \"responses\" of relation \"jobs\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 0.421}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:34:04.213+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:34:05.961+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:34:05+05:00", "grpc.request.deadline": "2024-05-02T03:34:12+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:56430", "error": "error during sql build, jobs create: ERROR: null value in column \"responses\" of relation \"jobs\" violates not-null constraint (SQLSTATE 23502)", "grpc.code": "Unknown", "grpc.time_ms": 0.773}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:35:10.415+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:35:19.768+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:35:19+05:00", "grpc.request.deadline": "2024-05-02T03:35:26+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:42800", "error": "error during sql build, jobs create: can't scan into dest[4]: cannot scan null into *int32", "grpc.code": "Unknown", "grpc.time_ms": 3.942}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:36:19.829+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:36:21.449+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:36:21+05:00", "grpc.request.deadline": "2024-05-02T03:36:28+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:39464", "grpc.code": "OK", "grpc.time_ms": 4.432}
+2024-05-02T03:36:37.044+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T03:36:37+05:00", "grpc.request.deadline": "2024-05-02T03:36:44+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:39464", "error": "error during sql build, jobs list: can't scan into dest[4]: cannot scan null into *int32", "grpc.code": "Unknown", "grpc.time_ms": 0.63}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_GetAllJobs_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:1002
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T03:40:42.431+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:41:15.833+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:41:27.949+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:41:27+05:00", "grpc.request.deadline": "2024-05-02T03:41:34+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 5.438}
+2024-05-02T03:41:44.229+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:41:44+05:00", "grpc.request.deadline": "2024-05-02T03:41:51+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 0.686}
+2024-05-02T03:41:49.148+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:41:49+05:00", "grpc.request.deadline": "2024-05-02T03:41:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 0.517}
+2024-05-02T03:43:11.808+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:43:11+05:00", "grpc.request.deadline": "2024-05-02T03:43:18+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 0.311}
+2024-05-02T03:43:18.399+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:43:18+05:00", "grpc.request.deadline": "2024-05-02T03:43:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 0.269}
+2024-05-02T03:43:33.478+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:43:33+05:00", "grpc.request.deadline": "2024-05-02T03:43:40+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:50640", "grpc.code": "OK", "grpc.time_ms": 4.881}
+2024-05-02T03:46:02.746+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:46:02+05:00", "grpc.request.deadline": "2024-05-02T03:46:09+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 0.522}
+2024-05-02T03:47:13.991+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:47:13+05:00", "grpc.request.deadline": "2024-05-02T03:47:20+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 0.453}
+2024-05-02T03:47:13.996+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:47:13+05:00", "grpc.request.deadline": "2024-05-02T03:47:20+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 4.512}
+2024-05-02T03:47:13.997+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:47:13+05:00", "grpc.request.deadline": "2024-05-02T03:47:20+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetJobById", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 0.411}
+2024-05-02T03:47:13.999+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:47:13+05:00", "grpc.request.deadline": "2024-05-02T03:47:20+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 1.293}
+2024-05-02T03:47:23.728+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:47:23+05:00", "grpc.request.deadline": "2024-05-02T03:47:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 0.476}
+2024-05-02T03:48:04.995+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:48:04+05:00", "grpc.request.deadline": "2024-05-02T03:48:11+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:49442", "grpc.code": "OK", "grpc.time_ms": 0.252}
+2024-05-02T03:51:30.804+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:51:54.815+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:51:54+05:00", "grpc.request.deadline": "2024-05-02T03:52:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:60920", "grpc.code": "OK", "grpc.time_ms": 1.045}
+2024-05-02T03:52:07.201+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:52:07+05:00", "grpc.request.deadline": "2024-05-02T03:52:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:60920", "grpc.code": "OK", "grpc.time_ms": 0.58}
+2024-05-02T03:52:07.231+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:52:07+05:00", "grpc.request.deadline": "2024-05-02T03:52:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:60920", "grpc.code": "OK", "grpc.time_ms": 29.093}
+2024-05-02T03:52:16.654+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:52:16+05:00", "grpc.request.deadline": "2024-05-02T03:52:23+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:60920", "grpc.code": "OK", "grpc.time_ms": 0.687}
+2024-05-02T03:53:43.044+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:53:43+05:00", "grpc.request.deadline": "2024-05-02T03:53:50+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 0.395}
+2024-05-02T03:54:01.523+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:54:01+05:00", "grpc.request.deadline": "2024-05-02T03:54:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 0.269}
+2024-05-02T03:54:16.005+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:54:16+05:00", "grpc.request.deadline": "2024-05-02T03:54:22+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 4.023}
+2024-05-02T03:54:46.829+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:54:46+05:00", "grpc.request.deadline": "2024-05-02T03:54:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 0.366}
+2024-05-02T03:54:46.858+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:54:46+05:00", "grpc.request.deadline": "2024-05-02T03:54:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 28.129}
+2024-05-02T03:54:55.713+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:54:55+05:00", "grpc.request.deadline": "2024-05-02T03:55:02+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 0.441}
+2024-05-02T03:56:30.664+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:56:30+05:00", "grpc.request.deadline": "2024-05-02T03:56:37+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:36888", "grpc.code": "OK", "grpc.time_ms": 0.571}
+2024-05-02T03:57:16.604+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T03:57:18.926+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T03:57:18+05:00", "grpc.request.deadline": "2024-05-02T03:57:25+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:60202", "grpc.code": "OK", "grpc.time_ms": 1.053}
+2024-05-02T05:06:13.806+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T05:53:49.445+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T05:53:49+05:00", "grpc.request.deadline": "2024-05-02T05:53:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:35798", "error": "error during sql build, jobs create: ERROR: invalid input syntax for type uuid: \"string\" (SQLSTATE 22P02)", "grpc.code": "Unknown", "grpc.time_ms": 30.233}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_CreateJob_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:966
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T05:54:12.620+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:54:12+05:00", "grpc.request.deadline": "2024-05-02T05:54:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:35798", "grpc.code": "OK", "grpc.time_ms": 4.131}
+2024-05-02T05:54:35.946+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:54:35+05:00", "grpc.request.deadline": "2024-05-02T05:54:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:35798", "grpc.code": "OK", "grpc.time_ms": 3.217}
+2024-05-02T05:55:10.391+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:55:10+05:00", "grpc.request.deadline": "2024-05-02T05:55:17+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:35798", "grpc.code": "OK", "grpc.time_ms": 0.482}
+2024-05-02T05:55:50.763+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:55:50+05:00", "grpc.request.deadline": "2024-05-02T05:55:57+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:59998", "grpc.code": "OK", "grpc.time_ms": 0.556}
+2024-05-02T05:56:38.672+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:56:38+05:00", "grpc.request.deadline": "2024-05-02T05:56:45+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:59998", "grpc.code": "OK", "grpc.time_ms": 27.22}
+2024-05-02T05:56:46.181+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:56:46+05:00", "grpc.request.deadline": "2024-05-02T05:56:53+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:59998", "grpc.code": "OK", "grpc.time_ms": 3.935}
+2024-05-02T05:56:55.735+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:56:55+05:00", "grpc.request.deadline": "2024-05-02T05:57:02+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:59998", "grpc.code": "OK", "grpc.time_ms": 0.302}
+2024-05-02T05:57:28.939+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:57:28+05:00", "grpc.request.deadline": "2024-05-02T05:57:35+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:58368", "grpc.code": "OK", "grpc.time_ms": 27.22}
+2024-05-02T05:58:51.769+0500	INFO	app/app.go:107	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T05:58:53.180+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:58:53+05:00", "grpc.request.deadline": "2024-05-02T05:59:00+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:52214", "grpc.code": "OK", "grpc.time_ms": 4.597}
+2024-05-02T05:59:23.805+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T05:59:23+05:00", "grpc.request.deadline": "2024-05-02T05:59:30+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateJob", "peer.address": "127.0.0.1:52214", "grpc.code": "OK", "grpc.time_ms": 4.133}
+2024-05-02T06:04:16.630+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:04:16+05:00", "grpc.request.deadline": "2024-05-02T06:04:23+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateRequests", "peer.address": "127.0.0.1:52214", "grpc.code": "OK", "grpc.time_ms": 6.206}
+2024-05-02T06:04:48.459+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:04:48+05:00", "grpc.request.deadline": "2024-05-02T06:04:55+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:52214", "grpc.code": "OK", "grpc.time_ms": 0.298}
+2024-05-02T06:07:14.473+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:07:14+05:00", "grpc.request.deadline": "2024-05-02T06:07:21+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.254}
+2024-05-02T06:07:14.921+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:07:14+05:00", "grpc.request.deadline": "2024-05-02T06:07:21+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.286}
+2024-05-02T06:07:27.953+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:07:27+05:00", "grpc.request.deadline": "2024-05-02T06:07:34+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.559}
+2024-05-02T06:08:01.589+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:08:01+05:00", "grpc.request.deadline": "2024-05-02T06:08:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.321}
+2024-05-02T06:08:36.381+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:08:36+05:00", "grpc.request.deadline": "2024-05-02T06:08:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.32}
+2024-05-02T06:08:36.386+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-05-02T06:08:36+05:00", "grpc.request.deadline": "2024-05-02T06:08:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:50758", "error": "error during sql build, Requests update: ERROR: new row for relation \"requests\" violates check constraint \"requests_status_resp_check\" (SQLSTATE 23514)", "grpc.code": "Unknown", "grpc.time_ms": 4.654}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/server_interceptors.go:39
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/tags/interceptors.go:23
+jobs_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:53
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:16
+jobs_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/internal/delivery/grpc/server/middleware.go:23
+jobs_service/genproto/jobs-service._JobsService_UpdateRequest_Handler
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/genproto/jobs-service/jobs.pb.go:1110
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/bobur/GolandProjects/ekzamen_5/jobs_service/vendor/google.golang.org/grpc/server.go:1019
+2024-05-02T06:09:12.784+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:09:12+05:00", "grpc.request.deadline": "2024-05-02T06:09:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.252}
+2024-05-02T06:09:12.788+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:09:12+05:00", "grpc.request.deadline": "2024-05-02T06:09:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "UpdateRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 3.987}
+2024-05-02T06:09:47.901+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:09:47+05:00", "grpc.request.deadline": "2024-05-02T06:09:54+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "DeleteRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 4.156}
+2024-05-02T06:09:52.964+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:09:52+05:00", "grpc.request.deadline": "2024-05-02T06:09:59+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllRequest", "peer.address": "127.0.0.1:50758", "grpc.code": "OK", "grpc.time_ms": 0.323}
+2024-05-02T06:24:06.198+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:24:06+05:00", "grpc.request.deadline": "2024-05-02T06:24:13+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:44094", "grpc.code": "OK", "grpc.time_ms": 0.65}
+2024-05-02T06:24:12.899+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:24:12+05:00", "grpc.request.deadline": "2024-05-02T06:24:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:44094", "grpc.code": "OK", "grpc.time_ms": 0.38}
+2024-05-02T06:25:32.055+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:32+05:00", "grpc.request.deadline": "2024-05-02T06:25:39+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.309}
+2024-05-02T06:25:34.381+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:34+05:00", "grpc.request.deadline": "2024-05-02T06:25:41+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.304}
+2024-05-02T06:25:34.851+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:34+05:00", "grpc.request.deadline": "2024-05-02T06:25:41+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.244}
+2024-05-02T06:25:35.069+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:35+05:00", "grpc.request.deadline": "2024-05-02T06:25:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.301}
+2024-05-02T06:25:35.293+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:35+05:00", "grpc.request.deadline": "2024-05-02T06:25:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.305}
+2024-05-02T06:25:35.495+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:35+05:00", "grpc.request.deadline": "2024-05-02T06:25:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.212}
+2024-05-02T06:25:35.695+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:35+05:00", "grpc.request.deadline": "2024-05-02T06:25:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.288}
+2024-05-02T06:25:35.883+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:35+05:00", "grpc.request.deadline": "2024-05-02T06:25:42+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.266}
+2024-05-02T06:25:36.037+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:36+05:00", "grpc.request.deadline": "2024-05-02T06:25:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.244}
+2024-05-02T06:25:36.150+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:25:36+05:00", "grpc.request.deadline": "2024-05-02T06:25:43+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:32770", "grpc.code": "OK", "grpc.time_ms": 0.202}
+2024-05-02T06:36:22.486+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:36:22+05:00", "grpc.request.deadline": "2024-05-02T06:36:29+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55222", "grpc.code": "OK", "grpc.time_ms": 0.558}
+2024-05-02T06:36:38.359+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T06:36:38+05:00", "grpc.request.deadline": "2024-05-02T06:36:45+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "GetAllJobs", "peer.address": "127.0.0.1:55222", "grpc.code": "OK", "grpc.time_ms": 0.601}
+2024-05-02T15:54:59.942+0500	INFO	app/app.go:119	gRPC Server Listening	{"url": ":4040"}
+2024-05-02T16:04:49.604+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-05-02T16:04:49+05:00", "grpc.request.deadline": "2024-05-02T16:04:56+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "job.JobsService", "grpc.method": "CreateJob", "peer.address": "127.0.0.1:44792", "grpc.code": "OK", "grpc.time_ms": 2.882}

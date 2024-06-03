@@ -1,0 +1,109 @@
+syntax = "proto3";
+
+package client;
+
+service ClientService {
+  rpc CreateClient(Client) returns (Client);
+  rpc GetClientById(GetRequest) returns (Client);
+  rpc GetAllClients(GetAllRequest) returns (GetAllResponse);
+  rpc UpdateClient(Client) returns (Client);
+  rpc DeleteClient(DeleteReq) returns (Status);
+   rpc CheckUniques(CheckUniquesRequest) returns (CheckUniquesResponse);
+   rpc Exists(EmailRequest) returns (Client);
+
+  rpc CreateSummary(Summary) returns (Summary);
+  rpc GetSummaryById(GetRequestSummary) returns (Summary);
+  rpc GetAllSummary(GetAllRequestSummary) returns (GetAllResponseSummary);
+  rpc UpdateSummary(Summary) returns (Summary);
+  rpc DeleteSummary(GetRequestSummary) returns (StatusSummary);
+}
+
+
+
+message GetAllRequestSummary{
+  int32 page = 1;
+  int32 limit = 2;
+  string field = 3;
+  string value = 4;
+}
+
+message GetAllResponseSummary{
+  repeated Summary summary = 1;
+}
+
+message GetRequestSummary {
+  int32 id = 1;
+  string owner_id = 2;
+
+}
+
+message StatusSummary {
+  bool status = 1;
+}
+
+message Summary {
+  int32 id = 1;
+  string owner_id = 2;
+  string skills = 3;
+  string bio = 4;
+  string languages = 5;
+}
+
+
+message Status {
+  bool status = 1;
+}
+
+message Client {
+  string id = 1;
+  string role = 2;
+  string first_name = 3;
+  string last_name = 4;
+  string email = 5;
+  string password = 6;
+  string refresh_token = 7;
+  string created_at = 8;
+  string updated_at = 9;
+  string deleted_at = 10;
+}
+
+message EmailRequest {
+  string email = 1;
+}
+
+message GetRequest {
+  string client_id = 1;
+  bool is_active = 2;
+}
+
+message DeleteReq {
+  string client_id = 1;
+  bool is_active = 2;
+  bool is_hard_deleted = 3;
+}
+
+message GetAllRequest {
+  int32 page = 1;
+  int32 limit = 2;
+  string field = 3;
+  string value = 4;
+}
+
+message GetAllResponse{
+  repeated Client allClients = 1;
+  int32 count = 2;
+}
+
+message CheckUniquesRequest {
+  string field = 1;
+  string value = 2;
+}
+
+message RefreshToken {
+  string refresh_token = 1;
+}
+
+message CheckUniquesResponse {
+  bool is_exist = 1;
+}
+

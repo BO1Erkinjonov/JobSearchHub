@@ -1,0 +1,22 @@
+2024-05-02T04:14:55.034+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T05:05:56.045+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T05:05:56.046+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/api-gateway/cmd/app/main.go:32
+2024-05-02T05:06:01.010+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T05:06:04.316+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T05:06:04.317+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/api-gateway/cmd/app/main.go:32
+2024-05-02T05:08:09.045+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T06:28:25.573+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T06:28:25.577+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/api-gateway/cmd/app/main.go:32
+2024-05-02T06:33:39.947+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T06:34:06.907+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T06:34:06.908+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/api-gateway/cmd/app/main.go:32
+2024-05-02T06:34:46.010+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T15:49:48.070+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}

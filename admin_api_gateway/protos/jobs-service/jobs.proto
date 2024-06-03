@@ -1,0 +1,86 @@
+syntax = "proto3";
+
+package job;
+
+service JobsService {
+  rpc CreateJob(Job) returns (Job);
+  rpc GetJobById(GetReq) returns (Job);
+  rpc GetAllJobs(GetAll) returns (ListJobs);
+  rpc UpdateJob(Job) returns (Job);
+  rpc DeleteJob(DelReq) returns (StatusJob);
+
+  rpc CreateRequests (Request) returns (Request);
+  rpc GetRequestByJobIdOrClientId(GetRequest) returns (Request);
+  rpc GetAllRequest(GetAllReq) returns (ListRequests);
+  rpc UpdateRequest(Request) returns (Request);
+  rpc DeleteRequest(GetRequest) returns (StatusReq);
+}
+
+
+message GetRequest {
+  string job_id = 1;
+  string client_id = 2;
+}
+
+message StatusReq {
+  bool status = 1;
+}
+
+message GetAllReq {
+  int32 page = 1;
+  int32 limit = 2;
+  string field = 3;
+  string value = 4;
+}
+
+message ListRequests {
+  repeated Request req = 1;
+}
+
+message Request {
+  string job_id = 1;
+  string client_id = 2;
+  int32 summary_id = 3;
+  string status_resp = 4;
+  string description_resp = 5;
+}
+
+
+message StatusJob {
+  bool status = 1;
+}
+
+message GetAll {
+  int32 page = 1;
+  int32 limit = 2;
+  string field = 3;
+  string value = 4;
+}
+
+message ListJobs {
+  repeated Job jobs = 1;
+}
+
+message DelReq{
+  string id = 1;
+  bool is_active = 2;
+  bool is_hard_deleted = 3;
+}
+
+message GetReq {
+  string id = 1;
+  bool is_active = 2;
+}
+
+message Job {
+  string id = 1;
+  string owner_id = 2;
+  string title = 3;
+  string description = 5;
+  int32 responses = 6;
+  string created_at = 7;
+  string updated_at = 8;
+  string deleted_at = 9;
+}
+
+

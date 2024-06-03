@@ -1,0 +1,1240 @@
+2024-05-01T20:37:04.037+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:37:04.043+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:37:16.759+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:39:03.333+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:39:03.334+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:39:13.317+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:40:12.436+0500	ERROR	v1/job.go:106	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:106
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:40:43.492+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:40:43.493+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:41:08.041+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:41:11.530+0500	ERROR	v1/job.go:108	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:108
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:41:55.450+0500	ERROR	v1/job.go:108	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:108
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:42:27.607+0500	ERROR	v1/job.go:108	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:108
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:42:39.601+0500	ERROR	v1/job.go:108	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:108
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:46:35.715+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:46:35.715+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:46:38.409+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:46:56.384+0500	ERROR	v1/job.go:108	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: ERROR: operator does not exist: uuid ~~* unknown (SQLSTATE 42883)"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetJobsByOwnerId
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:108
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T20:48:22.121+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:48:22.122+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:53:59.361+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:54:31.139+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:54:31.140+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T20:54:43.510+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T20:55:27.432+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T20:55:27.433+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T21:04:53.842+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T21:12:35.075+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T21:12:35.076+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T21:12:37.175+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T21:13:36.174+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T21:13:36.174+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T21:13:37.315+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T21:45:07.264+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T21:45:07.264+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T21:45:10.547+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T21:46:01.423+0500	ERROR	v1/registration.go:226	the user has already been deleted
+admin_api_gateway/api/handlers/v1.(*handlerV1).LogIn
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/registration.go:226
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T22:22:13.012+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T22:22:13.015+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T22:22:16.516+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T22:22:20.202+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T22:22:20.204+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:20:02.191+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:20:29.405+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:20:29.406+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:20:37.083+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:26:23.355+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:26:23.355+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:28:17.001+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:28:32.058+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:28:32.059+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:30:28.652+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:33:00.482+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:33:00.484+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:34:19.395+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:34:23.310+0500	ERROR	v1/summary.go:60	failed to create summary	{"error": "rpc error: code = Unimplemented desc = unknown method CreateSummary for service client.ClientService"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateSummary
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/summary.go:60
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-01T23:38:50.082+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:38:50.083+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:38:53.666+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:41:01.919+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:41:01.920+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-01T23:45:44.936+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-01T23:45:58.553+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-01T23:45:58.554+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:18:39.794+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:31:33.584+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T00:31:33.585+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:34:10.257+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:46:23.380+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T00:46:23.381+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:46:43.261+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:47:50.473+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T00:47:50.474+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:47:57.017+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:49:19.974+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T00:49:19.974+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:49:56.437+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:51:07.666+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T00:51:07.667+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T00:51:21.149+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T00:52:01.264+0500	ERROR	v1/job.go:249	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T00:53:42.855+0500	ERROR	v1/job.go:249	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:01:23.934+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:01:23.935+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:01:33.389+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:01:44.215+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:01:44.216+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:01:58.767+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:03:32.265+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:03:32.266+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:03:33.846+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:04:56.270+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:04:56.270+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:04:58.689+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:06:26.083+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:06:26.084+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:06:32.961+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:07:04.378+0500	ERROR	v1/job.go:242	failed to get client	{"error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4040: connect: connection refused\""}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:242
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:07:12.288+0500	ERROR	v1/job.go:242	failed to get client	{"error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4040: connect: connection refused\""}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:242
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:07:18.287+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:07:18.288+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:07:21.193+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:09:23.674+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:09:23.675+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:09:42.077+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:11:04.407+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:11:04.408+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:11:07.422+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:12:40.972+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:12:40.973+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:12:42.231+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:12:43.062+0500	ERROR	v1/job.go:254	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:254
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:13:01.505+0500	ERROR	v1/job.go:254	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:254
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:13:17.425+0500	ERROR	v1/job.go:254	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:254
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:13:18.816+0500	ERROR	v1/job.go:254	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:254
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:13:41.395+0500	ERROR	v1/job.go:254	failed to get client
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:254
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:14:19.583+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:14:19.584+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:14:21.798+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:16:35.728+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:16:35.729+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:16:41.453+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:17:51.344+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:17:51.345+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:17:52.512+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:18:08.674+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:18:08.674+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:18:09.790+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:18:10.246+0500	ERROR	v1/job.go:259	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:259
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:18:29.343+0500	ERROR	v1/job.go:259	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:259
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:18:43.640+0500	ERROR	v1/job.go:259	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:259
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:18:48.481+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:18:48.481+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:18:51.442+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:18:54.034+0500	ERROR	v1/job.go:259	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:259
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:19:09.926+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:19:09.927+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:19:13.385+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:19:14.270+0500	ERROR	v1/job.go:260	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:260
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:21:13.319+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:21:13.320+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:21:15.637+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:21:18.495+0500	ERROR	v1/job.go:260	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).UpdateJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:260
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:21:47.487+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:21:47.488+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:23:51.067+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:25:45.917+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:32:11.248+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:32:11.251+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:32:25.490+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:33:12.272+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:33:12.272+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:33:24.977+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:34:46.277+0500	ERROR	v1/job.go:322	failed to update job	{"error": "job already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).DeleteJob
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:322
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T01:36:03.687+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:36:03.688+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:46:51.389+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:48:17.561+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:48:17.562+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:48:31.942+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:49:45.072+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:49:45.073+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:49:49.503+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:57:26.463+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:57:26.464+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T01:57:34.579+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T01:57:35.501+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T01:57:35.502+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:31:08.117+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:31:12.307+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:31:12.308+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:31:13.760+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:36:53.719+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:36:53.720+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:36:54.949+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:37:04.136+0500	ERROR	v1/request.go:76	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:76
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:37:08.485+0500	ERROR	v1/request.go:76	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:76
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:37:48.220+0500	ERROR	v1/request.go:76	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:76
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:38:09.655+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:38:09.656+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:38:14.673+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:38:16.213+0500	ERROR	v1/request.go:77	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:77
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:38:43.377+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:38:43.377+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:38:45.622+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:38:46.285+0500	ERROR	v1/request.go:78	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:78
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:41:30.092+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:41:30.093+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:41:32.206+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:41:43.166+0500	ERROR	v1/request.go:78	failed to update summary	{"error": "summary already exists"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).CreateRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/request.go:78
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T02:41:50.729+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:41:50.730+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:56:44.923+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:59:16.081+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:59:16.081+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:59:19.635+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T02:59:25.739+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T02:59:25.740+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T02:59:43.961+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:18:46.061+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:18:46.062+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:29:01.808+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:29:56.551+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:29:56.552+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:29:57.990+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:30:55.133+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:30:55.134+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:30:56.490+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:33:13.270+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:33:13.271+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:33:14.448+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:33:52.975+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:33:52.976+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:33:54.212+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:35:14.408+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:35:14.408+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:35:15.475+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:36:37.044+0500	ERROR	v1/job.go:152	failed to get client	{"error": "rpc error: code = Unknown desc = error during sql build, jobs list: can't scan into dest[4]: cannot scan null into *int32"}
+admin_api_gateway/api/handlers/v1.(*handlerV1).GetAllJobs
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/handlers/v1/job.go:152
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.NewAuthorizer.func2
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/casbin/casbin.go:54
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+admin_api_gateway/api.NewRoute.Tracing.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/api/middleware/tracing.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/vendor/github.com/gin-gonic/gin/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/home/bobur/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.21.8.linux-amd64/src/net/http/server.go:2009
+2024-05-02T03:40:45.780+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:40:45.780+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:40:47.154+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:41:17.445+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:41:17.446+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:41:19.003+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:44:14.596+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:44:14.597+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:44:27.871+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:51:34.707+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:51:34.708+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:51:50.306+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T03:53:30.870+0500	INFO	app/main.go:41	api gateway service stops
+2024-05-02T03:53:30.871+0500	ERROR	app/main.go:32	app run	{"error": "http: Server closed"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T03:53:39.939+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T04:05:31.448+0500	INFO	app/main.go:30	Listen: 	{"address": "localhost:1212"}
+2024-05-02T04:05:31.449+0500	ERROR	app/main.go:32	app run	{"error": "listen tcp 127.0.0.1:1212: bind: address already in use"}
+main.main.func1
+	/home/bobur/GolandProjects/ekzamen_5/admin_api_gateway/cmd/app/main.go:32
+2024-05-02T04:05:39.575+0500	INFO	app/main.go:41	api gateway service stops

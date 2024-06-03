@@ -1,0 +1,788 @@
+definitions:
+  models.AccessToken:
+    properties:
+      access_token:
+        type: string
+    type: object
+  models.Error:
+    properties:
+      message:
+        type: string
+    type: object
+  models.JobReq:
+    properties:
+      description:
+        type: string
+      title:
+        type: string
+    type: object
+  models.JobResponse:
+    properties:
+      created_at:
+        type: string
+      deleted_at:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      owner_id:
+        type: string
+      responses:
+        type: integer
+      title:
+        type: string
+      updated_at:
+        type: string
+    type: object
+  models.JobUpdateReq:
+    properties:
+      description:
+        type: string
+      job_id:
+        type: string
+      number_of_people:
+        type: integer
+      title:
+        type: string
+    type: object
+  models.JobsOwner:
+    properties:
+      created_at:
+        type: string
+      deleted_at:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      owner:
+        $ref: '#/definitions/models.ResponseClient'
+      owner_id:
+        type: string
+      responses:
+        type: integer
+      title:
+        type: string
+      updated_at:
+        type: string
+    type: object
+  models.ListJobs:
+    properties:
+      jobs:
+        items:
+          $ref: '#/definitions/models.JobsOwner'
+        type: array
+    type: object
+  models.ListRequest:
+    properties:
+      requests:
+        items:
+          $ref: '#/definitions/models.RequestListResp'
+        type: array
+    type: object
+  models.ListSummary:
+    properties:
+      summary:
+        items:
+          $ref: '#/definitions/models.SummaryResponse'
+        type: array
+    type: object
+  models.ReqClient:
+    properties:
+      email:
+        type: string
+      first_name:
+        type: string
+      last_name:
+        type: string
+      password:
+        type: string
+    type: object
+  models.Request:
+    properties:
+      job_id:
+        type: string
+      summary_id:
+        type: integer
+    type: object
+  models.RequestListResp:
+    properties:
+      client_id:
+        type: string
+      description_resp:
+        type: string
+      job_id:
+        type: string
+      status_resp:
+        type: string
+      summary_id:
+        type: integer
+    type: object
+  models.RequestResp:
+    properties:
+      client_id:
+        type: string
+      job_id:
+        type: string
+      summary_id:
+        type: integer
+    type: object
+  models.RequestResponse:
+    properties:
+      description_resp:
+        type: string
+      job_id:
+        type: string
+      status_resp:
+        type: string
+    type: object
+  models.ResponseClient:
+    properties:
+      created_at:
+        type: string
+      deleted_at:
+        type: string
+      email:
+        type: string
+      first_name:
+        type: string
+      id:
+        type: string
+      last_name:
+        type: string
+      password:
+        type: string
+      role:
+        type: string
+      updated_at:
+        type: string
+    type: object
+  models.StandardErrorModel:
+    properties:
+      error:
+        $ref: '#/definitions/models.Error'
+    type: object
+  models.Summary:
+    properties:
+      bio:
+        type: string
+      languages:
+        type: string
+      skills:
+        type: string
+    type: object
+  models.SummaryResponse:
+    properties:
+      bio:
+        type: string
+      id:
+        type: integer
+      languages:
+        type: string
+      owner_id:
+        type: string
+      skills:
+        type: string
+    type: object
+  models.SummaryUpdateRequest:
+    properties:
+      bio:
+        type: string
+      id:
+        type: integer
+      languages:
+        type: string
+      skills:
+        type: string
+    type: object
+host: localhost:1212
+info:
+  contact: {}
+  title: Bobur Erkinjonov
+  version: "1.7"
+paths:
+  /v1/Verification/:
+    post:
+      consumes:
+      - application/json
+      description: Verification - Api for registering users
+      parameters:
+      - description: Code
+        in: query
+        name: code
+        required: true
+        type: integer
+      - description: Email
+        in: query
+        name: email
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.AccessToken'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      summary: Verification
+      tags:
+      - Register
+  /v1/create/job:
+    post:
+      consumes:
+      - application/json
+      description: CreateJob - Api for createJob
+      parameters:
+      - description: create job
+        in: body
+        name: CreateJob
+        required: true
+        schema:
+          $ref: '#/definitions/models.JobReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.JobResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: CreateJob
+      tags:
+      - job
+  /v1/create/request:
+    post:
+      consumes:
+      - application/json
+      description: CreateRequest - Api for create request
+      parameters:
+      - description: create request
+        in: body
+        name: CreateRequest
+        required: true
+        schema:
+          $ref: '#/definitions/models.Request'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.RequestResp'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: CreateRequest
+      tags:
+      - requests
+  /v1/create/summary:
+    post:
+      consumes:
+      - application/json
+      description: CreateSummary - Api for creating client
+      parameters:
+      - description: create summary model
+        in: body
+        name: CreateSummary
+        required: true
+        schema:
+          $ref: '#/definitions/models.Summary'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.SummaryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: CreateSummary
+      tags:
+      - summary
+  /v1/delete/client:
+    delete:
+      consumes:
+      - application/json
+      description: DeleteClient - Api for deleteClient client
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: boolean
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: DeleteClient
+      tags:
+      - client
+  /v1/delete/job:
+    delete:
+      consumes:
+      - application/json
+      description: DeleteJob - Api for delete job
+      parameters:
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: boolean
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: DeleteJob
+      tags:
+      - job
+  /v1/delete/summary:
+    delete:
+      consumes:
+      - application/json
+      description: DeleteClient - Api for delete summary
+      parameters:
+      - description: summary_id
+        in: query
+        name: summary_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: boolean
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: DeleteSummary
+      tags:
+      - summary
+  /v1/get/all/request:
+    get:
+      consumes:
+      - application/json
+      description: GetAllRequest - Api for get request
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListRequest'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: GetAllRequest
+      tags:
+      - requests
+  /v1/get/all/summary/owner:
+    get:
+      consumes:
+      - application/json
+      description: GetAllSummaryByOwnerId - Api for get summary
+      parameters:
+      - description: page
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListSummary'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: GetAllSummaryByOwnerId
+      tags:
+      - summary
+  /v1/get/client:
+    get:
+      consumes:
+      - application/json
+      description: GetClientById - Api for getting client
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ResponseClient'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: GetClientById
+      tags:
+      - client
+  /v1/get/jobs:
+    get:
+      consumes:
+      - application/json
+      description: GetAllJobs - Api for get jobs
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: title
+        in: query
+        name: title
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListJobs'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: GetAllJobs
+      tags:
+      - job
+  /v1/get/jobs/ownerId:
+    get:
+      consumes:
+      - application/json
+      description: GetJobsByOwnerId - Api for get jobs
+      parameters:
+      - description: page
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: limit
+        in: query
+        name: limit
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListJobs'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: GetJobsByOwnerId
+      tags:
+      - job
+  /v1/login/:
+    post:
+      consumes:
+      - application/json
+      description: LogIn - Api for registering users
+      parameters:
+      - description: Password
+        in: query
+        name: password
+        required: true
+        type: string
+      - description: Email
+        in: query
+        name: email
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.AccessToken'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      summary: LogIn
+      tags:
+      - Register
+  /v1/register/:
+    post:
+      consumes:
+      - application/json
+      description: Register - Api for registering users
+      parameters:
+      - description: createRegisterModel
+        in: body
+        name: Register
+        required: true
+        schema:
+          $ref: '#/definitions/models.ReqClient'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: boolean
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      summary: Register
+      tags:
+      - Register
+  /v1/update/client:
+    put:
+      consumes:
+      - application/json
+      description: UpdateClient - Api for updating client
+      parameters:
+      - description: updateModel
+        in: body
+        name: UpdateClient
+        required: true
+        schema:
+          $ref: '#/definitions/models.ReqClient'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ResponseClient'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: UpdateClient
+      tags:
+      - client
+  /v1/update/job:
+    put:
+      consumes:
+      - application/json
+      description: UpdateJob - Api for update job
+      parameters:
+      - description: update job
+        in: body
+        name: UpdateJob
+        required: true
+        schema:
+          $ref: '#/definitions/models.JobUpdateReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.JobResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: UpdateJob
+      tags:
+      - job
+  /v1/update/request:
+    put:
+      consumes:
+      - application/json
+      description: UpdateRequest - Api for update request
+      parameters:
+      - description: update request
+        in: body
+        name: UpdateRequest
+        required: true
+        schema:
+          $ref: '#/definitions/models.RequestResponse'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Request'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: UpdateRequest
+      tags:
+      - requests
+  /v1/update/summary:
+    put:
+      consumes:
+      - application/json
+      description: UpdateSummary - Api for update summary
+      parameters:
+      - description: update summary
+        in: body
+        name: UpdateSummary
+        required: true
+        schema:
+          $ref: '#/definitions/models.SummaryUpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Summary'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.StandardErrorModel'
+      security:
+      - ApiKeyAuth: []
+      summary: UpdateSummary
+      tags:
+      - summary
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

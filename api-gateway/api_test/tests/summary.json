@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "owner_id":  "Mock Owner Id",
+  "skills":    "Mock skills",
+  "bio":       "Mock bio",
+  "languages": "Mock languages"
+}

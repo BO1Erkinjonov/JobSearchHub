@@ -1,0 +1,9 @@
+{
+    "id":            "Mock Id,",
+    "role":          "Mock Role,",
+    "first_name":    "Mock First Name,",
+    "last_name":     "Mock Last Name,",
+    "email":         "Mock Email,",
+    "password":      "Mock Password,",
+    "refresh_token": "Mock Token,"
+}

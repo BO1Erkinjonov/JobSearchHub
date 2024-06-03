@@ -1,0 +1,161 @@
+services:
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      PGDATA: /data/postgres
+      POSTGRES_DB: ekzamen5_db
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5332:5332"
+    networks:
+      - db
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d postgres" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  mongodb:
+    image: bitnami/mongodb:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27018:27018"
+    networks:
+      - db
+
+  client_service:
+    container_name: client_service
+    build: ./client_service
+    depends_on:
+      - "mongodb"
+      - "db"
+      - "jobs_service"
+    ports:
+      - "5050:5050"
+    networks:
+      - db
+
+  jobs_service:
+    container_name: jobs_service
+    build: ./jobs_service
+    depends_on:
+      - "mongodb"
+      - "db"
+      - "otel-collector"
+    ports:
+      - "4040:4040"
+    networks:
+      - db
+
+  admin_api_gateway:
+    container_name: admin_api_gateway
+    build: ./admin_api_gateway
+    depends_on:
+      - "redisdb"
+      - "jobs_service"
+      - "client_service"
+      - "db"
+    ports:
+      - "3030:3030"
+    networks:
+      - db
+
+  redisdb:
+    container_name: redisdb
+    image:  redis
+    ports:
+      - "6378:6378"
+    networks:
+      - db
+
+  api:
+    container_name: api-gateway
+    build: ./api-gateway
+    depends_on:
+      -  "redisdb"
+      -  "client_service"
+      -  "jobs_service"
+      -  "db"
+    ports:
+      - "1212:1212"
+    networks:
+      - db
+
+  migrate:
+    image: migrate/migrate
+    networks:
+      - db
+    volumes:
+      - ./migrations:/migrations
+    command: -path /migrations -database postgres://postgres:123@db:5432/ekzamen5_db?sslmode=disable -verbose up
+    links:
+      - db
+    depends_on:
+      - "db"
+
+  jaeger-all-in-one:
+    container_name: jaeger-all-in-one
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+      - "14268:14268"
+      - "14250:14250"
+    networks:
+      - db
+
+  otel-collector:
+    container_name: otel-collector
+    image: otel/opentelemetry-collector:latest
+    command: [ "--config=/etc/otel-collector-config.yaml" ]
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    ports:
+      - "4317:4317" # OTLP gRPC receiver
+    depends_on:
+      - "jaeger-all-in-one"
+    networks:
+      - db
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "22181:2181"
+    networks:
+      - db
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    networks:
+      - db
+
+
+
+networks:
+  db:
+    driver: bridge
+
+volumes:
+  db:
+
+
